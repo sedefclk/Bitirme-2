@@ -1,0 +1,77 @@
+.slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-main-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:black
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+
+  }
+  
+  .active, .dot:hover {
+    background-color: #e9ee54;
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Slider dÄ±ÅŸÄ±na taÅŸan kÄ±sÄ±mlarÄ± kes */
+  }
+  
+  .slider-main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px; /* Ya da ihtiyaca gÃ¶re baÅŸka bir deÄŸer */
+    max-width: 100%; /* Resim taÅŸÄ±yÄ±cÄ±sÄ±nÄ±n geniÅŸliÄŸini aÅŸmamak iÃ§in */
+    margin: 0 auto; /* Otomatik margin ile ortala */
+  }
+  
+  .slider-main-image img {
+    max-height: 100%; /* TaÅŸÄ±yÄ±cÄ± div'e gÃ¶re yÃ¼ksekliÄŸi sÄ±nÄ±rla */
+    max-width: 100%; /* TaÅŸÄ±yÄ±cÄ± div'e gÃ¶re geniÅŸliÄŸi sÄ±nÄ±rla */
+  }
+  .slider-controls {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .slider-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

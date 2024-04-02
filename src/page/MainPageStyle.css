@@ -1,0 +1,227 @@
+.App {
+    text-align: center;
+    background-color: #ffffff; /* Ana sayfa arka plan rengi */
+
+  }
+  .App-container {
+    max-width: 100vw; /* Maksimum geniÅŸlik */
+    margin: 0 auto; /* Otomatik margin ile ortala */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ã‡ocuk elementleri dikeyde ortala */
+  }
+  
+.App-thumbnail {
+  max-width: 100%; /* Maksimum geniÅŸlik */
+  width: 180px; /* KÃ¼Ã§Ã¼k resimler iÃ§in sabit bir geniÅŸlik ayarlayÄ±n */
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+  
+}
+
+.App-large-image {
+    width: 100%; /* GeniÅŸlik tam konteyner geniÅŸliÄŸi olacak */
+    height: 100%; /* YÃ¼kseklik orantÄ±lÄ± olacak */
+    object-fit: cover; /* Resmi kÄ±rpma */
+    
+  }
+  .App-thumbnails {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .App-thumbnails::-webkit-scrollbar {
+    height: 20px; /* Correct thickness for horizontal scrollbar */
+  }
+  
+  .App-thumbnails::-webkit-scrollbar-track {
+    background: #ddd; /* Scrollbar track color */
+  }
+  
+  .App-thumbnails::-webkit-scrollbar-thumb {
+    background: #272525; /* Scrollbar thumb color */
+  }
+  
+  .App-thumbnails::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar thumb color on hover */
+  }
+  
+  .App-thumbnails-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+  }
+  
+  .App-thumbnail:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+  }
+  
+
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  min-height: 10%;
+  display: flex;
+  align-items: center; /* Dikeyde hizala */
+  justify-content: flex-start; /* Yatayda sola hizala */
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 0 20px;
+  z-index: 1000; /* DiÄŸer Ã¶ÄŸelerin Ã¼zerinde kalmasÄ± iÃ§in z-index deÄŸeri ayarlayÄ±n */
+
+}
+
+.App-banner {
+  display: flex;
+  align-items: center; /* Dikeyde hizala */
+  justify-content: flex-start; /* Yatayda sola hizala */
+}
+
+.oyunLegoImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  margin-left: 50px; /* SaÄŸa boÅŸluk bÄ±rakmak iÃ§in */
+  margin-right: 50px; /* SaÄŸa boÅŸluk bÄ±rakmak iÃ§in */
+}
+
+.App-banner-text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Creepster, sans-serif;
+  margin-left: 50px; /* SaÄŸa boÅŸluk bÄ±rakmak iÃ§in */
+  margin-right: 200px; /* SaÄŸa boÅŸluk bÄ±rakmak iÃ§in */
+}
+
+.App-header-buttons {
+  position: absolute;
+  top: 50%; /* SayfanÄ±n Ã¼stÃ¼ndeki yÃ¼ksekliÄŸin yarÄ±sÄ± */
+  right: 50px; /* SaÄŸ kenara 20 piksel mesafe */
+  transform: translateY(-50%); /* Dikeyde tam ortalamak iÃ§in */
+}
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-main {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if there's extra space */
+    padding: 20px;
+  }
+  
+  .App-gallery {
+    justify-content: center;
+    margin-right: 0; /* Removed the margin that could restrict width */
+    align-items: center;
+    width: 100%; /* Metin kutusu ile arasÄ±nda boÅŸluk */
+  }
+   
+  .App-text {
+    width: 1000px; /* Ä°Ã§eriÄŸe gÃ¶re geniÅŸlik */
+    max-width: 100%; /* Maksimum geniÅŸlik */
+    padding: 20px; /* Ä°Ã§ boÅŸluk */
+    border: 1px solid #ccc; /* Ã‡erÃ§eve */
+    border-radius: 8px; /* KenarlarÄ± yuvarlaklaÅŸtÄ±r */
+    background-color: #e4c042; /* Arka plan rengi */
+    margin-top: 20px; /* Ãœstten boÅŸluk */
+    box-sizing: border-box; /* Padding ve border geniÅŸliÄŸi dahil hesaplanÄ±r */
+  }
+  
+  /*alttaki Ã§izgi*/
+  .App-footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px 0;
+  }
+  .App-characters-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .App-character-thumbnails {
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .App-character-thumbnail {
+    width: 120px; /* Karakter resimlerinin geniÅŸliÄŸi */
+    height: auto;
+    object-fit: cover;
+    flex: 0 0 auto; /* Flex Ã¶ÄŸelerini sÄ±kÄ±ÅŸtÄ±rmadan veya geniÅŸletmeden tut */
+  }
+  
+  button {
+    margin-top: 10px;
+
+    padding: 10px 20px;
+    border: none;
+    background: rgb(0, 0, 0); /* Veya istediÄŸiniz bir arkaplan rengi */
+    color: white;
+    border-radius: 4px;
+  
+  }
+  
+  button:hover {
+    background: #e4c042; /* Veya istediÄŸiniz bir hover efekti */
+    
+  }.App-footer-actions-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Konteyner geniÅŸliÄŸi */
+  padding: 10px;
+}
+.App-purchase-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; /* Ä°Ã§ bÃ¶lÃ¼mlerin maksimum geniÅŸliÄŸi */
+    width: 100%; /* Ä°Ã§ bÃ¶lÃ¼mlerin geniÅŸliÄŸi */
+    padding: 20px;
+    background: #e8e8e8;
+    border-radius: 20px;
+    height: 60px;
+    margin:3px
+}
+.App-login-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ä°Ã§ bÃ¶lÃ¼mlerin maksimum geniÅŸliÄŸi */
+    width: 100%; /* Ä°Ã§ bÃ¶lÃ¼mlerin geniÅŸliÄŸi */
+    padding: 20px;
+    background: #e8e8e8;
+    height: 100px;
+    border-radius: 20px;
+    border-color: #000000;
+    height: 60px;
+    margin:3px
+  }
+.App-purchase-section h2 {
+    color: rgb(0, 0, 0); /* BaÅŸlÄ±k metninin rengi */
+    font-size: 15px; /* BaÅŸlÄ±k metninin boyutu */
+    
+  }
+  
+  .App-login-section h2 {
+    color: rgb(0, 0, 0); /* BaÅŸlÄ±k metninin rengi */
+    font-size: 14px; /* BaÅŸlÄ±k metninin boyutu */
+    
+  }
+  
+  
+  
+  

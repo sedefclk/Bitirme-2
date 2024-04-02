@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Arka plan rengini beyaz yap */
+    background-image: url('../Material/login-arkaplan.png'); /* image55 dosyasÄ±nÄ±n yolunu belirtin */
+  
+  }
+  
+  
+  .login-container {
+    width: 40%;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(222, 222, 222, 0.7); /* 70% transparanlÄ±k */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+    width: 80%; /* Etiketlerin geniÅŸliÄŸini ayarla */
+    text-align: center; /* Etiketleri ortala */
+  }
+  
+  .login-container input {
+    width: calc(100% - 20px); /* GeniÅŸliÄŸi daralt */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+  }
+  
+  .login-container button {
+    width: 150px; /* Sabit geniÅŸlik */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .login-container button:hover {
+    background-color: rgb(248, 98, 12);
+  }
+  

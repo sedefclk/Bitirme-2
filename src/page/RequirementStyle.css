@@ -1,0 +1,52 @@
+/* VRSystemInfo.css */
+
+.vr-info-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vr-info-container h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+  
+  .vr-info-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .vr-info-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .vr-info-button:hover {
+    background-color: rgb(248, 98, 12);
+  }
+  
+  .vr-info-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .vr-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    /* Add specific icon styling here */
+  }
+  
