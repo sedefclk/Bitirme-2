@@ -45,8 +45,8 @@ const MainPage: React.FC = () => {
           </div>
         </div>
         <div className="App-header-buttons">
-          <button onClick={handleLoginClick}>GiriÅŸ Yap</button>
-          <button onClick={handleRegisterClick}>KayÄ±t Ol</button>
+          <button onClick={handleLoginClick}>Giriş Yap</button>
+          <button onClick={handleRegisterClick}>Kayıt Ol</button>
         </div>
       </header>
       
